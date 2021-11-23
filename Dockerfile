@@ -8,6 +8,8 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+RUN chmod +x start_server.sh
+
 EXPOSE 5000
 
 CMD ["/usr/src/app/start_server.sh"]
